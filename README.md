@@ -40,7 +40,7 @@ De relevante punten van de Eindopdracht aan de hand van Web2Py:
 
     
 
--   De link in deze screenshot gaat naar http://127.0.0.1:8000/formulier/formulier, dus de formulier functie in de formulier controller.
+-   De link in deze screenshot gaat naar http://127.0.0.1:8000/formulier/formulier, dus de formulier functie in de formulier controller. <br>
     ![screenshot1](screenshots/helloworld.png)
 
     ![screenshot1](screenshots/form.png)
