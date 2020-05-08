@@ -7,13 +7,3 @@ def home():
     # door msg te returnen als waarde, kan ik deze aanroepen in de bijbehorende view
     # de view die hier dus bij hoort is home.html in views/home
     return dict(msg=helloworld)
-
-
-# om deze functie te benaderen ga ik naar http://127.0.0.1:8000/A4_Web2Py_MVC/home/formulier
-def formulier():
-    # hier maak ik een form aan op basis van de gemaakte tabel in de database
-    # deze tabel is aangemaakt in models/db_form.py, met als naam 'naaminvoer'
-    form = SQLFORM(db.naaminvoer)
-    # return SQLFORM object op basis van de tabel 'naaminvoer'
-    # de view die hier bij hoort is formulier.html in views/home
-    return dict(form=form)
