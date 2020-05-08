@@ -6,4 +6,5 @@ def home():
     helloworld = "Hello, world!"
     # door msg te returnen als waarde, kan ik deze aanroepen in de bijbehorende view
     # de view die hier dus bij hoort is home.html in views/home
-    return dict(msg=helloworld)
+    link = URL('formulier', 'formulier')
+    return dict(msg=helloworld, link=link)
