@@ -18,7 +18,7 @@ De relevante punten van de Eindopdracht aan de hand van Web2Py:
 
 -   In controllers/home.py staat de functie home die de variabele msg meegeeft aan de view in views/home/home.html
     Deze wordt dan weergegeven in de view. Zie als voorbeeld:
-    ![screenshot1](screenshots/helloworld.png)
+    ![screenshot1](screenshots/helloworld.png)<br>
     Als je naar de adresbalk kijkt zie je nogmaals welke route op dat moment gebruikt wordt.
 
 -   In controllers/formulier.py staat de functie formulier die de variabele form (wat een formulier is op basis van de tabel in models/db_form.py).
