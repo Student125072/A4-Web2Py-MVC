@@ -27,6 +27,19 @@ De relevante punten van de Eindopdracht aan de hand van Web2Py:
 
 -   Het model wat wij hebben aangemaakt voor het formulier staat in models/db_form.py, dit is een tabel genaamd "naaminvoer", met als velden: "voor- en achternaam" en "leeftijd".
 
+    ```python
+    # hier maak ik een tabel aan door de define_table functie te gebruiken
+    # ik geef de tabel de naam 'naaminvoer' met als velden:
+    # voornaam, achternaam en leeftijd
+    db.define_table('naaminvoer',
+                    Field('voornaam', requires=IS_NOT_EMPTY()),
+                    Field('achternaam', requires=IS_NOT_EMPTY()),
+                    Field('leeftijd', requires=IS_NOT_EMPTY())
+                    )
+    ```
+
+    
+
 -   De link in deze screenshot gaat naar http://127.0.0.1:8000/formulier/formulier, dus de formulier functie in de formulier controller.
     ![screenshot1](screenshots/helloworld.png)
 
