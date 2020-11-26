@@ -6,6 +6,10 @@ def formulier():
     # hier maak ik een form aan op basis van de gemaakte tabel in de database
     # deze tabel is aangemaakt in models/db_form.py, met als naam 'naaminvoer'
     form = SQLFORM(db.naaminvoer)
+    link = URL('home', 'overzicht')
+
+    if form.process().accepted:
+        response.flash = 'Record ingevoerd.'
     # return SQLFORM object op basis van de tabel 'naaminvoer'
     # de view die hier bij hoort is formulier.html in views/home
-    return dict(form=form)
+    return dict(form=form, link=link)
